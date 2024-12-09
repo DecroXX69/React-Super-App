@@ -44,7 +44,7 @@ Here're some of the project's best features:
 <p>1. Clone the repository</p>
 
 ```
-git clone https://github.com/191prajjwal/React-Super-App.git
+git clone https://github.com/DecroXX69/React-Super-App.git
 ```
 
 <p>2. Install dependencies</p>
