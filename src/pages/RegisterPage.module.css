@@ -1,0 +1,111 @@
+/* we are using modular css here like we gave className={styles.container}
+this is because if we use normal css and if  the children components of a component may  also have same classnames then it will inherit the css properties of parent  so in order to mitigate this issue we use modular css .
+
+using module css we create some scope to our component only so that applied css can be present in given scope only
+*/ 
+
+.container{
+    height:100vh;
+    width:100vw;
+    background-color: red;
+    display: flex;
+}
+
+.left{
+   
+   flex:1;
+   position: relative;
+}
+
+.background{
+    background-image: url("../assets/bcgImage.png");
+   width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-position: center;
+   
+
+}
+
+.label{
+    padding:0px 30px;
+    padding-right: 2px;
+    position:absolute;
+    bottom:50px;
+    max-width: 540px;
+    font-size: 2.7rem;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+    margin-left:5px;
+}
+
+.right{
+ background-color: rgb(0, 0, 0);
+ flex:1;
+ padding:50px 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+.header{
+
+    text-align: center;
+   
+
+}
+
+.heading{
+    font-family: "Single Day", system-ui;
+    color: #72DB73;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-weight: lighter;
+
+
+}
+
+.subheading{
+    
+font-size: 1.1rem;
+
+}
+
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    font-family: Roboto,sans-serif;
+}
+
+.footer a{
+    color: #72DB73;
+    text-decoration: none;
+   
+
+}
+
+@media screen and (max-width:1200px) {
+    .label{
+       font-size: 2.3rem;
+       position: absolute;
+       bottom:80px;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .label {
+      font-size: 1.8rem;
+    }
+    
+  }

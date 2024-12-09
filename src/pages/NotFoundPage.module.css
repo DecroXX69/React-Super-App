@@ -1,0 +1,50 @@
+.container{
+    height:100vh;
+   text-align: center;
+   background-color: black;
+   color:white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+.box h1{
+    font-size: 5rem;
+    color:#72DB73;
+    margin-bottom: 10px;
+}
+.box h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+
+
+}
+
+.box p{
+    
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding:0px 20px;
+    max-width: 600px;
+
+}
+.box button{
+    padding:7px;
+    border: none;
+    border-radius: 2px;
+    background-color: #72DB73;
+    font-weight: bold;
+    color:#393434;
+    transition:all 0.2s;
+    &:hover{
+        background-color:#2ce12f;
+        color:rgb(189, 187, 187);
+        transform : scale(0.95)
+    }
+
+
+
+}
